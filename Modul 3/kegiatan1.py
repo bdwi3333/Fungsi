@@ -3,14 +3,12 @@ def konversi_menit(minggu, hari, jam, menit):
     return total_menit
 
 def konversi_waktu(data):
-    # Membagi string data menjadi komponen minggu, hari, jam, dan menit
     komponen = data.split()
     minggu = int(komponen[0])
     hari = int(komponen[2])
     jam = int(komponen[4])
     menit = int(komponen[6])
     
-    # Menggunakan fungsi konversi_menit untuk mengkonversi ke menit
     total_menit = konversi_menit(minggu, hari, jam, menit)
     return total_menit
 
@@ -23,7 +21,6 @@ OutputData = [konversi_waktu(item) for item in data]
 print()
 print("[=== HASIL KONVERSI MENIT ===]")
 print()
-# Menampilkan data masukan dan hasil konversi ke menit
 for i in range(len(data)):
     print("Data inputan:", data[i])
     print("Hasil konversi:", OutputData[i])
