@@ -1,1 +1,1 @@
-filterData = filter(lambda x : x%2==1,map(lambda y : y*2, range(10)) )
+print(list(map(lambda y: y*2, filter(lambda x: x % 2 == 1, range(10)))))
